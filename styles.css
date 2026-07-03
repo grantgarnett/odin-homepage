@@ -1,6 +1,35 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url(./resources/fonts/OpenSans-Regular.woff2);
+}
+
+@font-face {
+    font-family: "Open Sans Medium";
+    src: url(./resources/fonts/OpenSans-Medium.woff2);
+}
+
+@font-face {
+    font-family: "PTSerif";
+    src: url(./resources/fonts/PTSerif-Regular.woff2);
+}
+
 * {
     margin: 0;
     padding: 0;
+}
+
+h1 {
+    font-family: "Open Sans Medium", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+h2,
+h3 {
+    font-family: "Open Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+p {
+    font-family: "PTSerif", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
 }
 
 .content-container {
