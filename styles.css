@@ -30,16 +30,23 @@ h3 {
 p {
     font-family: "PTSerif", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-}
 
 .content-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 4vw;
 }
 
-/* Header section */
+.content-nav-row {
+    display: flex;
+}
+
+.content-nav-row img {
+    width: 5vw;
+}
+
+/* header */
 
 header {
     z-index: -1;
@@ -79,9 +86,80 @@ h1 {
     width: 5vw;
 }
 
-/* header section end */
+/* main */
+
+main {
+    padding: 5vw;
+}
+
+main h2 {
+    margin-bottom: 4vw;
+}
+
+.projects {
+    display: grid;
+    gap: 8vw 4vw;
+}
+
+/* square shape width of grid cell */
+
+.card-bg {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+}
+
+.card {
+    box-shadow: 2px 2px 5px 2px rgb(195, 204, 214);
+
+    display: grid;
+    grid-template-rows: 1fr 0.4fr;
+}
+
+.card-content {
+    padding: 1em 2em;
+}
+
+.content-nav-row {
+    width: 100%;
+    padding-left: 1em;
+    margin-bottom: 1em;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content-nav-icons {
+    justify-self: end;
+}
+
+.card-1-bg {
+    background-color: orangered;
+}
+
+.card-2-bg {
+    background-color: violet;
+}
+
+.card-3-bg {
+    background-color: rgb(20, 108, 57);
+}
+
+.card-4-bg {
+    background-color: rgb(234, 236, 122);
+}
+
+.card-5-bg {
+    background-color: rgb(50, 27, 122);
+}
+
+.card-6-bg {
+    background-color: rgb(0, 255, 234);
+}
 
 @media (max-width: 600px) {
+
+    /* header */
+
     header {
         display: flex;
         flex-direction: column;
@@ -121,6 +199,16 @@ h1 {
     }
 
     .about h2 {
+        text-align: center;
+    }
+
+    /* main */
+
+    .projects {
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    main h2 {
         text-align: center;
     }
 }
