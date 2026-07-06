@@ -46,6 +46,12 @@ p {
     width: 5vw;
 }
 
+.icon-row {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+
 /* header */
 
 header {
@@ -72,18 +78,12 @@ h1 {
     position: relative;
 }
 
-.about {
-    padding: 0 5vw;
-}
-
-.header-icon-row {
-    display: flex;
-    justify-content: center;
-    gap: 1vw;
-}
-
 .header-icon-row img {
     width: 5vw;
+}
+
+.about {
+    padding: 5vw 0;
 }
 
 /* main */
@@ -156,6 +156,26 @@ main h2 {
     background-color: rgb(0, 255, 234);
 }
 
+/* footer */
+
+footer h2 {
+    padding: 5vw 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5vw;
+}
+
+.footer-text {
+    font-size: 1.25em;
+}
+
+.footer-icon-row img {
+    width: 8vw;
+}
+
 @media (max-width: 600px) {
 
     /* header */
@@ -210,5 +230,21 @@ main h2 {
 
     main h2 {
         text-align: center;
+    }
+
+    /* footer */
+
+    footer {
+        padding: 0 5vw 5vw 5vw;
+        color: white;
+        background-color: rgb(2, 125, 184);
+    }
+
+    footer h2 {
+        text-align: center;
+    }
+
+    footer>img {
+        display: none;
     }
 }
