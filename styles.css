@@ -1,16 +1,28 @@
 @font-face {
-    font-family: "Open Sans";
-    src: url(./resources/fonts/OpenSans-Regular.woff2);
+    font-family: 'Open Sans';
+    src: url('OpenSans-Regular.woff2') format('woff2'),
+        url('OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: "Open Sans Medium";
-    src: url(./resources/fonts/OpenSans-Medium.woff2);
+    font-family: 'Open Sans';
+    src: url('OpenSans-Medium.woff2') format('woff2'),
+        url('OpenSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: "PTSerif";
-    src: url(./resources/fonts/PTSerif-Regular.woff2);
+    font-family: 'PT Serif';
+    src: url('PTSerif-Regular.woff2') format('woff2'),
+        url('PTSerif-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 * {
@@ -18,23 +30,19 @@
     padding: 0;
 }
 
-h1 {
-    font-family: "Open Sans Medium", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
-    font-size: 3em;
-}
-
+h1,
 h2,
 h3 {
     font-family: "Open Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 3em;
 }
 
 h2 {
     font-size: 2em;
-}
-
-h {
-    font-size: 1.5em;
 }
 
 p {
