@@ -190,6 +190,10 @@ footer h2 {
     font-size: 1.25em;
 }
 
+.footer-icon-row {
+    align-self: center;
+}
+
 .footer-icon-row img {
     width: 8vw;
 }
