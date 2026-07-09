@@ -64,27 +64,11 @@ p {
     width: 5vw;
 }
 
-.icon-row {
-    display: flex;
-    justify-content: center;
-    gap: 1vw;
-}
-
 /* header */
 
-header {
-    z-index: -1;
-}
 
-header .about {
-    z-index: 1;
-}
 
-header .title-image {
-    z-index: 2;
-}
-
-.title-image picture {
+.title-and-image img {
     z-index: 0;
 }
 
@@ -92,7 +76,7 @@ h1 {
     color: white;
 }
 
-.title-image {
+.title-and-image {
     position: relative;
 }
 
@@ -198,7 +182,13 @@ footer h2 {
     width: 8vw;
 }
 
-@media (max-width: 600px) {
+@media (width <=600px) {
+
+    .icon-row {
+        display: flex;
+        justify-content: center;
+        gap: 1vw;
+    }
 
     /* header */
 
@@ -209,12 +199,12 @@ footer h2 {
     }
 
     .title-and-image {
-        position: relative;
-
         padding: 5vw;
 
         background-image: url(./resources/images/photos/header-bg.svg);
         background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0px -10vw;
     }
 
     .title-and-image .title-container {
@@ -270,5 +260,72 @@ footer h2 {
 
     footer>img {
         display: none;
+    }
+}
+
+@media (width > 600px) and (width <=1200px) {
+    html {
+        font-size: 18px;
+    }
+
+    /* header */
+
+    header {
+        padding: 5vw;
+
+        background-image: url(./resources/images/photos/header-bg.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0px -10vw;
+    }
+
+    .title-and-image .title-container {
+        position: absolute;
+        width: 90%;
+        height: 100%;
+
+        display: flex;
+        justify-content: end;
+        align-items: start;
+    }
+
+    h1 {
+        text-shadow: 1px 1px rgb(134, 143, 151);
+    }
+
+    .title-and-image img {
+        float: left;
+        margin-right: 1vw;
+
+        aspect-ratio: 5 / 6;
+        object-fit: cover;
+    }
+
+    .about {
+        width: 80%;
+
+        background-color: white;
+        box-shadow: 0 0 10px 1px rgb(134, 143, 151);
+
+        margin: 10vw 10vw 0 10vw;
+    }
+
+    .about h2 {
+        margin-bottom: 3vw;
+
+        text-align: center;
+    }
+
+    .about p {
+        font-size: 1.25em;
+        line-height: 2;
+    }
+
+    .header-icon-row {
+        margin-right: 5vw;
+
+        display: flex;
+        justify-content: end;
+        gap: 1vw;
     }
 }
