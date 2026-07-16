@@ -74,6 +74,7 @@ p {
 
 .title-and-image img {
     z-index: 0;
+    box-shadow: 0 0 10px 1px rgb(134, 143, 151);
 }
 
 .title-and-image {
@@ -179,10 +180,6 @@ footer {
     gap: 4vw;
 }
 
-.footer-icon-row img {
-    width: 6vw;
-}
-
 @media (width <=600px) {
 
     /* header */
@@ -257,6 +254,10 @@ footer {
 
     .footer-icon-row {
         justify-content: center;
+    }
+
+    .footer-icon-row img {
+        width: 8vw;
     }
 
     footer>img {
@@ -351,6 +352,10 @@ footer {
 
     .footer-icon-row {
         justify-content: left;
+    }
+
+    .footer-icon-row img {
+        width: 6vw;
     }
 
     footer img {
